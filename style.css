@@ -1,0 +1,334 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Poppins:wght@600&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --Pink: hsl(322, 100%, 66%);
+    --Very-Pale-Cyan: hsl(193, 100%, 96%);
+    --Very-Dark-Cyan: hsl(192, 100%, 9%);
+    --Grayish-Blue: hsl(208, 11%, 55%);
+}
+
+body{
+    font-size: 18px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+body h1,h2{
+    color: var(--Very-Dark-Cyan);
+    font-family: 'Poppins', sans-serif;
+}
+/* body p{
+    color: var(--Grayish-Blue);
+    padding-top: 20px;
+} */
+
+header{
+    background-color: var(--Very-Pale-Cyan);
+    background-image: url("images/bg-hero-desktop.svg");
+    background-position: center center;
+    padding: 40px 60px;
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 50px;
+}
+.header img{
+    width: 15%;
+}
+.btn{
+    background-color: #FFF;
+    padding: 15px 60px;
+    border: none;
+    border-radius: 40px;
+    font-size: 12px;
+    font-weight: bold;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.left{
+    width: 50%;
+    padding: 0 20px;
+}
+.left h1{
+    font-size: 50px;
+    font-weight: 800;
+    color: var(--Very-Dark-Cyan);
+}
+.left p{
+    font-size: 20px;
+    padding-bottom: 24px;
+    color: var(--Very-Dark-Cyan);
+}
+.right{
+    width: 50%;
+}
+.right img{
+    width: 100%;
+}
+.btn-secondary{
+    background-color: var(--Pink);
+    color: #FFF;
+    font-size: 14px;
+    padding: 18px 60px;
+}
+
+.sec-1{
+    margin: 100px 0 50px 0;
+}
+.three-sec-container{
+    display: flex;
+    justify-content: space-between !important;
+    align-items: center;
+    min-width: 340px;
+    margin: 0 auto;
+    max-width: 1200px;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+    border: none;
+    border-radius: 10px;
+    margin: 0 auto;
+}
+.three-sec-right{
+    width: 40%;
+    margin-right: 10px;
+}
+.three-sec-left{
+    padding: 0px 100px;
+    width: 60%;
+    margin-right: 10px;
+}
+.three-sec-right img{
+    width: 100%;
+    padding: 30px;
+}
+.uno{
+    width: 40%;
+    padding: 0 !important;
+}
+.uno img{
+    width: 100%;
+    padding: 30px;
+}
+.sec-2{
+    margin: 0 auto;
+}
+.sec-3{
+    margin: 70px 0 0 0;
+}
+.sec-4{
+    position: relative;
+}
+.sec-4-container{
+    width: 500px;
+    height: 200px;
+    border: 0;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+    top: 150px;
+    margin: 100px auto;
+    background-color: #FFF;
+}
+.btn-third{
+    background-color: var(--Pink);
+    color: #FFF;
+    font-size: 14px;
+    padding: 18px 60px;
+    margin-top: 30px;
+}
+footer .f-text{
+    padding-top: 0px !important;
+}
+.f-main-sec5{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: var(--Very-Dark-Cyan);
+    color: #FFF;
+    padding-top:100px;
+    padding-bottom: 50px;
+}
+.f-sec4{
+    display: flex;
+}
+.f-main-img{
+        filter:  brightness(0) invert(1);
+        width: 70%;
+}
+.f-cont{
+    display: flex;
+    padding: 10px 0;
+}
+.f-img{
+    margin-right: 20px;
+}
+.f-sec4 p{
+    border: 1px solid #FFF;
+    border-radius: 70%;
+    display: inline-block;
+    padding: 7px;
+    margin-right: 5px;
+    font-size: 10px;
+    cursor: pointer;
+}
+.f-sec2 p{
+    padding: 3px 0;
+}
+.f-sec3 p{
+    padding: 3px 0;
+}
+footer p{
+    opacity: 50%;
+}
+.ft-p{
+    text-align: right;
+    background-color: var(--Very-Dark-Cyan) !important;
+    color: #FFF;
+    width: 100%;
+    padding: 10px 14px;
+    font-size: 14px;
+}
+
+
+@media(max-width:675px){
+    header{
+        padding: 40px 15px;
+    }
+    .header{
+        display: flex;
+    }
+    .header img{
+        width: 30%;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .header .btn{
+        padding: 7px 15px;
+    }
+    .container{
+        flex-direction: column;
+    }
+    .left{
+        width: 100%;
+        padding: 0;
+    }
+    .left h1{
+        font-size: 22px;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+    .left p{
+        font-size: 16px;
+        text-align: center;
+        opacity:80%;
+    }
+    .left .btn-secondary{
+        margin: 20px 81px;
+        padding: 16px 40px;
+    }
+    .right{
+        width: 90%;
+        margin: 20px auto;
+    }
+    .three-sec-left p{
+        opacity: 60%;
+    }
+    .three-sec-right p{
+        opacity: 60%;
+        margin-top: 10px;
+    }
+    .three-sec-container{
+        width: 90%;
+        flex-direction: column-reverse;
+    }
+    .three-sec-left{
+        width: 100%;
+        height: 50%;
+        padding: 20px;
+        text-align: center;
+    }
+    .three-sec-left h2{
+        margin-bottom: 10px;
+    }
+    .three-sec-right{
+        width: 100%;
+        height: 50%;
+        padding: 0;
+    }
+    .uno-con{
+        flex-direction: column !important;
+        padding: 0 !important;
+    }
+    .uno-con .three-sec-right{
+        padding: 20px;
+        text-align: center;
+    }
+    .three-sec-right h2{
+        font-size: 22px;
+    }
+    .three-sec-left h2{
+        font-size: 22px;
+    }
+    .three-sec-right p{
+        font-size: 16px;
+    }
+    .three-sec-left p{
+        font-size: 16px;
+    }
+    .sec-4-container{
+        width: 90%;
+    }
+    .sec-4-container h2{
+        font-size: 18px;
+        text-align: center;
+    }
+    .f-main-sec5{
+        flex-direction: column;
+        width: 100%;
+        padding: 120px 0 0 0;
+    }
+    .f-main-img{
+        margin-bottom: 10px;
+    }
+    .f-text{
+        font-size: 14px;
+    }
+    .f-sec2{
+        margin-right: 165px;
+        margin-top: 20px;
+        font-size: 14px;
+    }
+    .f-sec3{
+        margin-right: 175px;
+        margin-bottom: 40px;
+        font-size: 14px;
+    }
+    .f-sec4 p{
+        margin-right: 12px;
+        padding: 12px;
+        font-size: 8px;
+    }
+    .ft-p{
+        text-align: center;
+        font-size: 14px;
+        top: 0;
+    }
+
+}
+
+
+
